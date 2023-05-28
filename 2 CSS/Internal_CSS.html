@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: DarkBlue;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+    background-color:LightBlue;
+}
+
+#sidebar {
+    background-color: #32a4e7;
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: LightSkyBlue;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: DodgerBlue;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+}
+
+.menuitem:nth-child(3) {
+   background-color:DeepSkyBlue;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 10;
+    }    
+}
+</style>
+
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>CSS STYLESHEETS</h1>
+    <p>Select different Stylesheets</p>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" ><a href="Mixed_CSS.html">Mixed Page</a></li>
+       <li class="menuitem" ><a href="External_CSS.html">External CSS</a></li>
+       <li class="menuitem" >Internal CSS</li>
+       <li class="menuitem" ><a href="Inline_CSS.html">Inline CSS</a></li>
+     </ul>
+    </div>
+    <div id="main">
+      <h1>What is CSS?</h1>
+      <p>
+<ul>
+<li>CSS stands for <b>Cascading Style Sheets</b></li>
+<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+<li>It can control the layout of multiple web pages all at once</li>
+<li>External stylesheets are stored in <b>.CSS files</b></li>
+</ul>
+</p>
+       <h2>CSS Box Model</h2>
+      <p>
+	In CSS, the term "box model" is used when talking about design and layout.
+	The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. 
+      </p>
+   </div>
+    <div id="sidebar">
+      <h3>CSS Syntax</h3>
+      <p>Contains Selector(Element) and a set of Declarations with Property and Value.</p> 
+    </div>
+  </div>  
+  
+  
+  <div id="bottom">
+     <img src="CSS_Box_Model.jpg" "alt=Box Diagram" width="306" height="165">
+  </div>
+</div>
+</body>
+</html>

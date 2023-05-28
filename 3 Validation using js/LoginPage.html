@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+function LoginValidation() {
+  var x = document.forms["myForm1"]["user"].value;
+  var y = document.forms["myForm1"]["password"].value;
+  
+    if ((x == "BRAmbedkar")&&(y=="123")) {
+    document.getElementById("demo").innerHTML="LOGIN SUCCESSFUL";
+    }
+  else
+   {
+    document.getElementById("demo").innerHTML="LOGIN FAILED";
+    }
+}
+</script>
+</head>
+
+<body>
+<h3>LOGIN</h3>
+<form id="myForm1">
+<table>
+<tr>
+<td>User</td>
+<td><input type="text" name="user" /></td>
+</tr>
+<tr>
+<td>password</td>
+<td><input type="password"name="password" /></td>
+</tr>
+</table>
+<input type="button" name="login" value="Login" onclick="LoginValidation();"/></button>
+</form>
+<p id="demo"></p>
+<a href="Payment.html">Payment by Credit Card</a>
+
+</body>
+</html>
